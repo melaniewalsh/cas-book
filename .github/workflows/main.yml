@@ -10,7 +10,7 @@ on:
     # unrelated files, you can make this run only if a file within that specific
     # folder has been modified.
     #
-    # paths:
+    paths:
      - mybookpath/post45_data_collective_book/
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
