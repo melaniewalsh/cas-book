@@ -6,7 +6,7 @@ This book includes resources for working with data in the Post45 Data Collective
 
 ### Building the book
 
-If you'd like to develop and/or build the Post45 Data Collective Book book, you should:
+If you'd like to develop and/or build the Post45 Data Collective Book book, you should
 
 1. Clone this repository
 2. Run `pip install -r requirements.txt` (it is recommended you do this within a virtual environment)
