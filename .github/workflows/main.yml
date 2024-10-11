@@ -46,7 +46,7 @@ jobs:
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build mybookpath/post45_data_collective_book/post45_data_collective_book/.
+        jupyter-book build mybookpath/post45_data_collective_book/post45_data_collective_book/
 
     # Upload the book's HTML as an artifact
     - name: Upload artifact
