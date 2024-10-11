@@ -11,7 +11,7 @@ on:
     # folder has been modified.
     #
     paths:
-    - ../mybookpath/post45_data_collective_book/**
+    - mybookpath/post45_data_collective_book/**
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
