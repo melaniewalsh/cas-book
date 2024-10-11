@@ -3,7 +3,7 @@
 # See the documentation for help and more options: 
 # https://jupyterbook.org/customize/config.html
 
-#######################################################################################
+######################################################################################
 # Book settings
 title                       : Post45 Data Collective Book  # The title of the book. Will be placed in the left navbar.
 author                      : Post45 Data Collective  # The author of the book
