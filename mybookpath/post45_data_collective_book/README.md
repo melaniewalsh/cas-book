@@ -14,7 +14,7 @@ If you'd like to develop and/or build the Post45 Data Collective Book book, you 
 4. Run `jupyter-book clean post45_data_collective_book/` to remove any existing builds
 5. Run `jupyter-book build post45_data_collective_book/`
 
-A fully-rendered HTML version of the book will be built in `post45_data_collective_book/_build/html/`.
+A fully-rendered HTML version of the book will be built in `post45_data_collective_book/_build/html/`
 
 ### Hosting the book
 
