@@ -1,7 +1,6 @@
-# Post45 Data Collective Book
+# CAS Book
 
-This book includes resources for working with data in the Post45 Data Collective and for enhancing your own datasets and collections.
-
+This book includes resources for working with archival data.
 ## Usage
 
 ### Building the book
