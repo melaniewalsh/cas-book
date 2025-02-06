@@ -1,0 +1,869 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>OCLC Classify Title Author &#8212; Computational Archival Science</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'persistent-identifiers/oclc_classify_title_author_only';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="OCLC Classify" href="oclc_classify_identifier.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/cases_logo.png" class="logo__image only-light" alt="Computational Archival Science - Home"/>
+    <script>document.write(`<img src="../_static/cases_logo.png" class="logo__image only-dark" alt="Computational Archival Science - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Computational Archival Science Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Persistent Identifiers</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="oclc_classify_identifier.html">OCLC Classify</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">OCLC Classify Title Author</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/melaniewalsh/cas-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/melaniewalsh/cas-book/issues/new?title=Issue%20on%20page%20%2Fpersistent-identifiers/oclc_classify_title_author_only.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/persistent-identifiers/oclc_classify_title_author_only.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>OCLC Classify Title Author</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="oclc-classify-title-author">
+<h1>OCLC Classify Title Author<a class="headerlink" href="#oclc-classify-title-author" title="Link to this heading">#</a></h1>
+<p>In this tutorial we will be using OCLC Classify service to reconcile bibliographic titles and authors. In this situation we only have the title of the work and the author’s name. Our goal is to enrich the dataset with unique persistent identifiers for the names and titles provided. The approach we are taking in getting these identifiers is to start with the Work, which is the highest level of hierarchy. You can imagine a Work as having many instances, or editions that belong to the same work. So in order to get those instance level information we need to reconcile the Work to the OCLC Classify Work.</p>
+<p>Getting started checklist:</p>
+<ol class="arabic simple">
+<li><p>A CSV or TSV file with metadata, at minimum it needs to contain the author’s full name and the full title of the work.</p></li>
+<li><p>A OCLC WSkey for the Classify service, this can be generated if you have a subscription/membership with OCLC. You need to speak with someone at your institution who has access to your organization’s account at <a class="reference external" href="http://platform.worldcat.org/wskey/">http://platform.worldcat.org/wskey/</a></p></li>
+<li><p>Python, with Pandas, Requests and BeautifulSoup module installed and internet connection</p></li>
+</ol>
+<p>Our first steps will be defining some variables we will be using, set these variables below based on your setup:</p>
+<p><code class="docutils literal notranslate"><span class="pre">path_to_tsv</span></code> - the path to the TSV/CSV file you want to run it on</p>
+<p><code class="docutils literal notranslate"><span class="pre">id_author_name</span></code> - the name of the column header in the file that contains author’s name</p>
+<p><code class="docutils literal notranslate"><span class="pre">id_title_name</span></code> - the name of the column header in the file that contains title of the work</p>
+<p><code class="docutils literal notranslate"><span class="pre">id_author_viaf</span></code> - the name of the column header that the author’s viaf number will be put into</p>
+<p><code class="docutils literal notranslate"><span class="pre">id_author_authorized_heading</span></code> - the name of the column header that the  author’s authorized heading string</p>
+<p><code class="docutils literal notranslate"><span class="pre">id_author_lccn</span></code>- the name of the column header that the author’s lccn number</p>
+<p><code class="docutils literal notranslate"><span class="pre">user_agent</span></code> - this is the value put into the headers on each request, it is good practice to identifiy your client/project</p>
+<p><code class="docutils literal notranslate"><span class="pre">pause_between_req</span></code> - number of seconds to wait between each API call, if you want the script to run slower</p>
+<p><code class="docutils literal notranslate"><span class="pre">WSKey</span></code> - the OCLC WSkey, will be a 80 character alpha numeric code</p>
+<p>We also will load the modules we will be using.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">path_to_tsv</span> <span class="o">=</span> <span class="s2">&quot;/path/to/the_file.tsv&quot;</span>
+<span class="n">id_author_name</span> <span class="o">=</span> <span class="s1">&#39;author&#39;</span>
+<span class="n">id_title_name</span> <span class="o">=</span> <span class="s1">&#39;title&#39;</span>
+<span class="n">id_author_viaf</span>  <span class="o">=</span> <span class="s1">&#39;author_viaf&#39;</span>
+<span class="n">id_author_authorized_heading</span>  <span class="o">=</span> <span class="s1">&#39;author_authorized_heading&#39;</span>
+<span class="n">id_author_lccn</span> <span class="o">=</span> <span class="s1">&#39;author_lccn&#39;</span>
+<span class="n">user_agent</span> <span class="o">=</span> <span class="s1">&#39;YOUR PROJECT NAME HERE&#39;</span>
+<span class="n">pause_between_req</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">WSkey</span> <span class="o">=</span> <span class="s2">&quot;WSKeyXXXXXXXXXXXXXX&quot;</span>
+
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s take a look at a sample of what data you run through this script would look like, here are a few rows from a dataset that would be used with this approch:</p>
+<p>Before we start working with the file we need to define two helper functions. The first function (<code class="docutils literal notranslate"><span class="pre">add_classify</span></code>) will be what each row of the file is run throuh to modify the values. The second helper function (<code class="docutils literal notranslate"><span class="pre">extract_classify</span></code>) is to parse the results returned from the Classify service</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_classify</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+
+    <span class="c1"># You can add some logic here to skip rows that already have some data if you previously ran it</span>
+    <span class="c1"># if &#39;oclc_classify&#39; in d:</span>
+    <span class="c1">#     if type(d[&#39;oclc_classify&#39;]) == str:        </span>
+    <span class="c1">#         print(&#39;Skip&#39;,d[id_author_name])</span>
+    <span class="c1">#         return d</span>
+
+
+    <span class="c1"># make the call out to the classift service</span>
+    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;X-OCLC-API-Key&#39;</span><span class="p">:</span> <span class="n">WSkey</span><span class="p">}</span>
+    <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;author&#39;</span><span class="p">:</span> <span class="n">d</span><span class="p">[</span><span class="n">id_author_name</span><span class="p">],</span> <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="n">d</span><span class="p">[</span><span class="n">id_title_name</span><span class="p">],</span> <span class="s1">&#39;summary&#39;</span> <span class="p">:</span> <span class="s1">&#39;false&#39;</span><span class="p">,</span> <span class="s1">&#39;maxRecs&#39;</span><span class="p">:</span><span class="mi">100</span><span class="p">}</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://metadata.api.oclc.org/classify/&#39;</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span><span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+    <span class="n">work_parsed</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">work_unparsed</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="c1"># different response codes mean different things:</span>
+    <span class="c1"># 0:	Success. Single-work summary response provided.</span>
+    <span class="c1"># 2:	Success. Single-work detail response provided.</span>
+    <span class="c1"># 4:	Success. Multi-work response provided.</span>
+    <span class="c1"># 100:	No input. The method requires an input argument.</span>
+    <span class="c1"># 101:	Invalid input. The standard number argument is invalid.</span>
+    <span class="c1"># 102:	Not found. No data found for the input argument.</span>
+    <span class="c1"># 200:	Unexpected error.</span>
+
+    <span class="k">if</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&lt;response code=&quot;2&quot;/&gt;&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">work_parsed</span> <span class="o">=</span> <span class="n">extract_classify</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+        <span class="n">work_unparsed</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span>
+
+    <span class="k">elif</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&lt;response code=&quot;4&quot;/&gt;&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+        
+        <span class="c1"># we need to look through this reponse since it returned multiple possiblities, we will just be selecting the one with the most holdings</span>
+        <span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">))</span>
+        <span class="n">work_soup</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;works&quot;</span><span class="p">)</span>
+        <span class="n">largest_count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">largest_work</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">for</span> <span class="n">work</span> <span class="ow">in</span> <span class="n">work_soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&quot;work&quot;</span><span class="p">):</span>
+            <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">work</span><span class="p">[</span><span class="s1">&#39;holdings&#39;</span><span class="p">])</span> <span class="o">&gt;</span> <span class="n">largest_count</span><span class="p">:</span>
+                <span class="n">largest_count</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">work</span><span class="p">[</span><span class="s1">&#39;holdings&#39;</span><span class="p">])</span>
+                <span class="n">largest_work</span> <span class="o">=</span> <span class="n">work</span>
+
+        <span class="c1"># once we have that one we want to use, make the request again with its ID now</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;owi&#39;</span><span class="p">:</span> <span class="n">largest_work</span><span class="p">[</span><span class="s1">&#39;owi&#39;</span><span class="p">],</span> <span class="s1">&#39;summary&#39;</span> <span class="p">:</span> <span class="s1">&#39;false&#39;</span><span class="p">,</span> <span class="s1">&#39;maxRecs&#39;</span><span class="p">:</span><span class="mi">100</span><span class="p">}</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;https://metadata.api.oclc.org/classify/&#39;</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">,</span><span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+        <span class="n">work_parsed</span> <span class="o">=</span> <span class="n">extract_classify</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+        <span class="n">work_unparsed</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span>
+
+    <span class="k">elif</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&lt;response code=&quot;100&quot;/&gt;&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&lt;response code=</span><span class="se">\\</span><span class="s1">&quot;100</span><span class="se">\\</span><span class="s1">&quot;/&gt;&#39;</span><span class="p">)</span> <span class="o">&gt;-</span><span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">params</span><span class="p">,</span><span class="s1">&#39;100: No input. The method requires an input argument.&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&lt;response code=&quot;101&quot;/&gt;&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&lt;response code=</span><span class="se">\\</span><span class="s1">&quot;101</span><span class="se">\\</span><span class="s1">&quot;/&gt;&#39;</span><span class="p">)</span> <span class="o">&gt;-</span><span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">params</span><span class="p">,</span><span class="s1">&#39;101: Invalid input. The standard number argument is invalid.&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&lt;response code=&quot;102&quot;/&gt;&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&lt;response code=</span><span class="se">\\</span><span class="s1">&quot;102</span><span class="se">\\</span><span class="s1">&quot;/&gt;&#39;</span><span class="p">)</span> <span class="o">&gt;-</span><span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">params</span><span class="p">,</span><span class="s1">&#39;102: Not found. No data found for the input argument.&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&lt;response code=&quot;200&quot;/&gt;&#39;</span><span class="p">)</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;&lt;response code=</span><span class="se">\\</span><span class="s1">&quot;200</span><span class="se">\\</span><span class="s1">&quot;/&gt;&#39;</span><span class="p">)</span> <span class="o">&gt;-</span><span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">params</span><span class="p">,</span><span class="s1">&#39;200: Unexpected error.&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;unknown Problem:&quot;</span><span class="p">,</span><span class="n">r</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+
+    <span class="k">if</span> <span class="n">work_parsed</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="c1"># we are going to store the raw XML from the response in the file as well as the extracted information</span>
+        <span class="n">d</span><span class="p">[</span><span class="s1">&#39;oclc_classify&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">work_unparsed</span>
+
+        <span class="c1"># check if the columns we want to add are not yet there in the row, if not add them as null</span>
+        <span class="k">if</span> <span class="n">id_author_viaf</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
+            <span class="n">d</span><span class="p">[</span><span class="n">id_author_viaf</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">if</span> <span class="n">id_author_authorized_heading</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
+            <span class="n">d</span><span class="p">[</span><span class="n">id_author_authorized_heading</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="k">if</span> <span class="n">id_author_lccn</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">d</span><span class="p">:</span>
+            <span class="n">d</span><span class="p">[</span><span class="n">id_author_lccn</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+
+        <span class="c1"># add in the author info if is missing</span>
+        <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">isnull</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">id_author_viaf</span><span class="p">])</span> <span class="o">==</span> <span class="kc">True</span> <span class="ow">and</span> <span class="n">work_parsed</span><span class="p">[</span><span class="s1">&#39;work_author&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">work_parsed</span><span class="p">[</span><span class="s1">&#39;work_author&#39;</span><span class="p">][</span><span class="s1">&#39;viaf&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">d</span><span class="p">[</span><span class="n">id_author_authorized_heading</span><span class="p">]</span> <span class="o">=</span> <span class="n">work_parsed</span><span class="p">[</span><span class="s1">&#39;work_author&#39;</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
+                <span class="n">d</span><span class="p">[</span><span class="n">id_author_viaf</span><span class="p">]</span> <span class="o">=</span> <span class="n">work_parsed</span><span class="p">[</span><span class="s1">&#39;work_author&#39;</span><span class="p">][</span><span class="s1">&#39;viaf&#39;</span><span class="p">]</span>
+        
+        <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">isnull</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">id_author_lccn</span><span class="p">])</span> <span class="o">==</span> <span class="kc">True</span> <span class="ow">and</span> <span class="n">work_parsed</span><span class="p">[</span><span class="s1">&#39;work_author&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">work_parsed</span><span class="p">[</span><span class="s1">&#39;work_author&#39;</span><span class="p">][</span><span class="s1">&#39;lccn&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>                    
+                <span class="n">d</span><span class="p">[</span><span class="n">id_author_lccn</span><span class="p">]</span> <span class="o">=</span> <span class="n">work_parsed</span><span class="p">[</span><span class="s1">&#39;work_author&#39;</span><span class="p">][</span><span class="s1">&#39;lccn&#39;</span><span class="p">]</span>
+                <span class="n">d</span><span class="p">[</span><span class="n">id_author_authorized_heading</span><span class="p">]</span> <span class="o">=</span> <span class="n">work_parsed</span><span class="p">[</span><span class="s1">&#39;work_author&#39;</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
+
+        <span class="n">d</span><span class="p">[</span><span class="s1">&#39;oclc_eholdings&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">work_parsed</span><span class="p">[</span><span class="s1">&#39;work_eholdings&#39;</span><span class="p">]</span>
+        <span class="n">d</span><span class="p">[</span><span class="s1">&#39;oclc_holdings&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">work_parsed</span><span class="p">[</span><span class="s1">&#39;work_holdings&#39;</span><span class="p">]</span>
+        <span class="n">d</span><span class="p">[</span><span class="s1">&#39;oclc_owi&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">work_parsed</span><span class="p">[</span><span class="s1">&#39;work_owi&#39;</span><span class="p">]</span>
+
+
+    <span class="c1"># if we need to script to run slower we can configure it setting the  pause_between_req variable above </span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">pause_between_req</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">d</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>This is the second helper function, the Classify service returns a XML blob with data that can be parsed. We use the BeautifulSoup module to help read a parse the data.
+The function returns a dictonary with differnt keys:</p>
+<p><code class="docutils literal notranslate"><span class="pre">work_statement_responsibility</span></code> - the string statement of responsibility</p>
+<p><code class="docutils literal notranslate"><span class="pre">work_editions</span></code> - the total number of editions this work has</p>
+<p><code class="docutils literal notranslate"><span class="pre">work_eholdings</span></code> - the total eletronic holdings this work has</p>
+<p><code class="docutils literal notranslate"><span class="pre">work_format</span></code> - what format the work is, likely “Book”</p>
+<p><code class="docutils literal notranslate"><span class="pre">work_holdings</span></code> - how many instances of this work exists in all the OCLC membership libraries</p>
+<p><code class="docutils literal notranslate"><span class="pre">work_itemtype</span></code> - likely “itemtype-book”</p>
+<p><code class="docutils literal notranslate"><span class="pre">work_owi</span></code> - a Work identifier from OCLC, mostly only used inside this Classify service</p>
+<p><code class="docutils literal notranslate"><span class="pre">work_title</span></code> - title of the work</p>
+<p><code class="docutils literal notranslate"><span class="pre">authors</span></code> - A list of dictonaries that contain <code class="docutils literal notranslate"><span class="pre">name</span></code> <code class="docutils literal notranslate"><span class="pre">lccn</span></code> <code class="docutils literal notranslate"><span class="pre">viaf</span></code> for each contributor, their authorized heading and identfiiers</p>
+<p><code class="docutils literal notranslate"><span class="pre">work_author</span></code> - the “main” contributor, like the author opposed to illustrator or other contributor, a way to differentiate the main author from other contributors</p>
+<p><code class="docutils literal notranslate"><span class="pre">normalized_ddc</span></code> - the most common dewey decimal value for this work</p>
+<p><code class="docutils literal notranslate"><span class="pre">normalized_lcc</span></code> - the most common library of congress classifciation number for this work</p>
+<p><code class="docutils literal notranslate"><span class="pre">editions</span></code> - a list of dictonaries for all the editions (instances) that represent this work in OCLC insitutions, each dict contains: <code class="docutils literal notranslate"><span class="pre">author</span></code> <code class="docutils literal notranslate"><span class="pre">eholdings</span></code> <code class="docutils literal notranslate"><span class="pre">format</span></code> <code class="docutils literal notranslate"><span class="pre">holdings</span></code> <code class="docutils literal notranslate"><span class="pre">itemtype</span></code> <code class="docutils literal notranslate"><span class="pre">language</span></code> <code class="docutils literal notranslate"><span class="pre">oclc</span></code> <code class="docutils literal notranslate"><span class="pre">title</span></code></p>
+<p>You can view the Classify documentation for more information on the fields returned: <a class="reference external" href="https://classify.oclc.org/classify2/api_docs/classify.html">https://classify.oclc.org/classify2/api_docs/classify.html</a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">extract_classify</span><span class="p">(</span><span class="n">xml</span><span class="p">):</span>
+
+		<span class="c1"># we are parsing the XML with BeautifulSoup to make it easier to query</span>
+		<span class="n">soup</span> <span class="o">=</span> <span class="n">BeautifulSoup</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">xml</span><span class="p">))</span>
+
+		<span class="c1"># search for the &lt;work&gt; element</span>
+		<span class="n">work_soup</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;work&quot;</span><span class="p">)</span>
+
+		<span class="k">if</span> <span class="n">work_soup</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+			<span class="c1"># print(&quot;can not parse xml:&quot;)</span>
+			<span class="c1"># print(xml)</span>
+			<span class="k">return</span> <span class="kc">None</span>
+
+		<span class="n">results</span> <span class="o">=</span> <span class="p">{}</span>
+
+		<span class="c1"># each one of these are attributes on the &lt;work&gt; element, if they are present add them otherwise set it to None/null</span>
+		<span class="n">results</span><span class="p">[</span><span class="s1">&#39;work_statement_responsibility&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">work_soup</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;author&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="n">work_soup</span><span class="p">[</span><span class="s1">&#39;author&#39;</span><span class="p">]</span>
+		<span class="n">results</span><span class="p">[</span><span class="s1">&#39;work_editions&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">work_soup</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;editions&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="nb">int</span><span class="p">(</span><span class="n">work_soup</span><span class="p">[</span><span class="s1">&#39;editions&#39;</span><span class="p">])</span>
+		<span class="n">results</span><span class="p">[</span><span class="s1">&#39;work_eholdings&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">work_soup</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;eholdings&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="nb">int</span><span class="p">(</span><span class="n">work_soup</span><span class="p">[</span><span class="s1">&#39;eholdings&#39;</span><span class="p">])</span>
+		<span class="n">results</span><span class="p">[</span><span class="s1">&#39;work_format&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">work_soup</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;format&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="n">work_soup</span><span class="p">[</span><span class="s1">&#39;format&#39;</span><span class="p">]</span>
+		<span class="n">results</span><span class="p">[</span><span class="s1">&#39;work_holdings&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">work_soup</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;holdings&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="nb">int</span><span class="p">(</span><span class="n">work_soup</span><span class="p">[</span><span class="s1">&#39;holdings&#39;</span><span class="p">])</span>
+		<span class="n">results</span><span class="p">[</span><span class="s1">&#39;work_itemtype&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">work_soup</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;itemtype&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="n">work_soup</span><span class="p">[</span><span class="s1">&#39;itemtype&#39;</span><span class="p">]</span>
+		<span class="n">results</span><span class="p">[</span><span class="s1">&#39;work_owi&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">work_soup</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;owi&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="n">work_soup</span><span class="p">[</span><span class="s1">&#39;owi&#39;</span><span class="p">]</span>
+		<span class="n">results</span><span class="p">[</span><span class="s1">&#39;work_title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">work_soup</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="n">work_soup</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+		<span class="n">results</span><span class="p">[</span><span class="s1">&#39;main_oclc&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">work_soup</span><span class="o">.</span><span class="n">text</span>
+
+		<span class="c1"># the authors nested in their own elemnts, so find all of them</span>
+		<span class="n">authors_soup</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&quot;author&quot;</span><span class="p">)</span>
+		<span class="n">results</span><span class="p">[</span><span class="s1">&#39;authors&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+		<span class="c1"># find the attributres for each authors and save these pieces of info for each one</span>
+		<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">authors_soup</span><span class="p">:</span>
+			<span class="n">results</span><span class="p">[</span><span class="s1">&#39;authors&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+					<span class="s2">&quot;name&quot;</span> <span class="p">:</span> <span class="n">a</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;[&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span>
+					<span class="s2">&quot;lccn&quot;</span> <span class="p">:</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;lc&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;lc&#39;</span><span class="p">],</span>
+					<span class="s2">&quot;viaf&quot;</span> <span class="p">:</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">a</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;viaf&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;viaf&#39;</span><span class="p">]</span>
+				<span class="p">})</span>
+		<span class="c1"># clean up them if they were &quot;null&quot; strings in the data</span>
+		<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">results</span><span class="p">[</span><span class="s1">&#39;authors&#39;</span><span class="p">]:</span>
+			<span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;lccn&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;null&#39;</span><span class="p">:</span>
+				<span class="n">a</span><span class="p">[</span><span class="s1">&#39;lccn&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>	
+			<span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;viaf&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;null&#39;</span><span class="p">:</span>
+				<span class="n">a</span><span class="p">[</span><span class="s1">&#39;viaf&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>	
+
+		<span class="c1"># try to find the first main contributor</span>
+		<span class="c1"># the main contributor is usally the first in the work_statement_responsibility, but is just a string</span>
+		<span class="c1"># so try to match that name to the &lt;authors&gt; element to get their other information and mark them as being the</span>
+		<span class="c1"># &quot;main&quot; contributor</span>
+		<span class="n">results</span><span class="p">[</span><span class="s1">&#39;work_author&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+		<span class="k">if</span> <span class="n">results</span><span class="p">[</span><span class="s1">&#39;work_statement_responsibility&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+			<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s1">&#39;work_statement_responsibility&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;|&quot;</span><span class="p">))</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">:</span>
+				<span class="n">first_author</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s1">&#39;work_statement_responsibility&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;|&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+				<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">results</span><span class="p">[</span><span class="s1">&#39;authors&#39;</span><span class="p">]:</span>
+					<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;[&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span> <span class="n">first_author</span> <span class="p">)</span>
+					<span class="k">if</span> <span class="n">a</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="n">first_author</span><span class="p">:</span>
+						<span class="n">results</span><span class="p">[</span><span class="s1">&#39;work_author&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span>
+
+
+		<span class="c1"># no classifications by default and populate if they exist later</span>
+		<span class="n">results</span><span class="p">[</span><span class="s2">&quot;normalized_ddc&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+		<span class="n">results</span><span class="p">[</span><span class="s2">&quot;normalized_lcc&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
+
+		<span class="c1"># both Dewey and Library of Congress Classification are added, these are the most common </span>
+		<span class="c1"># out of all of the holdings in OCLC</span>
+		<span class="n">ddc_soup</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;ddc&quot;</span><span class="p">)</span>
+		<span class="k">if</span> <span class="n">ddc_soup</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+			<span class="n">ddc_soup</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;ddc&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;mostpopular&quot;</span><span class="p">)</span>
+			<span class="k">if</span> <span class="n">ddc_soup</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+				<span class="k">if</span> <span class="n">ddc_soup</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;nsfa&#39;</span><span class="p">):</span>
+					<span class="n">results</span><span class="p">[</span><span class="s2">&quot;normalized_ddc&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ddc_soup</span><span class="p">[</span><span class="s1">&#39;nsfa&#39;</span><span class="p">]</span>
+
+		<span class="n">lcc_soup</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;lcc&quot;</span><span class="p">)</span>
+		<span class="k">if</span> <span class="n">lcc_soup</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+			<span class="n">lcc_soup</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;lcc&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;mostpopular&quot;</span><span class="p">)</span>
+			<span class="k">if</span> <span class="n">lcc_soup</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+				<span class="k">if</span> <span class="n">lcc_soup</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;nsfa&#39;</span><span class="p">):</span>
+					<span class="n">results</span><span class="p">[</span><span class="s2">&quot;normalized_lcc&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">lcc_soup</span><span class="p">[</span><span class="s1">&#39;nsfa&#39;</span><span class="p">]</span>
+
+		<span class="c1"># headings are subject headings, and are in FAST headings</span>
+		<span class="n">results</span><span class="p">[</span><span class="s2">&quot;headings&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+		<span class="n">heading_soup</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&quot;heading&quot;</span><span class="p">)</span>
+		<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">heading_soup</span><span class="p">:</span>
+			<span class="n">results</span><span class="p">[</span><span class="s2">&quot;headings&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+					<span class="s2">&quot;id&quot;</span> <span class="p">:</span> <span class="n">h</span><span class="p">[</span><span class="s1">&#39;ident&#39;</span><span class="p">],</span>
+					<span class="s2">&quot;src&quot;</span><span class="p">:</span> <span class="n">h</span><span class="p">[</span><span class="s1">&#39;src&#39;</span><span class="p">],</span>
+					<span class="s2">&quot;value&quot;</span> <span class="p">:</span> <span class="n">h</span><span class="o">.</span><span class="n">text</span>
+				<span class="p">})</span>
+			
+		<span class="c1"># number of editions </span>
+		<span class="n">edition_soup</span> <span class="o">=</span> <span class="n">soup</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s2">&quot;edition&quot;</span><span class="p">)</span>
+		<span class="c1"># print(isbn,len(edition_soup))</span>
+		<span class="n">results</span><span class="p">[</span><span class="s2">&quot;editions&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+		<span class="c1"># for each &quot;edition&quot; pull out the info for it and store it</span>
+		<span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">edition_soup</span><span class="p">:</span>
+			<span class="n">edition</span> <span class="o">=</span> <span class="p">{}</span>
+			<span class="n">edition</span><span class="p">[</span><span class="s1">&#39;author&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;author&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="n">e</span><span class="p">[</span><span class="s1">&#39;author&#39;</span><span class="p">]</span>
+			<span class="n">edition</span><span class="p">[</span><span class="s1">&#39;eholdings&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;eholdings&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="nb">int</span><span class="p">(</span><span class="n">e</span><span class="p">[</span><span class="s1">&#39;eholdings&#39;</span><span class="p">])</span>
+			<span class="n">edition</span><span class="p">[</span><span class="s1">&#39;format&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;format&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="n">e</span><span class="p">[</span><span class="s1">&#39;format&#39;</span><span class="p">]</span>
+			<span class="n">edition</span><span class="p">[</span><span class="s1">&#39;holdings&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;holdings&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="nb">int</span><span class="p">(</span><span class="n">e</span><span class="p">[</span><span class="s1">&#39;holdings&#39;</span><span class="p">])</span>
+			<span class="n">edition</span><span class="p">[</span><span class="s1">&#39;itemtype&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;itemtype&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="n">e</span><span class="p">[</span><span class="s1">&#39;itemtype&#39;</span><span class="p">]</span>
+			<span class="n">edition</span><span class="p">[</span><span class="s1">&#39;language&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;language&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="n">e</span><span class="p">[</span><span class="s1">&#39;language&#39;</span><span class="p">]</span>
+			<span class="n">edition</span><span class="p">[</span><span class="s1">&#39;oclc&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;oclc&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="n">e</span><span class="p">[</span><span class="s1">&#39;oclc&#39;</span><span class="p">]</span>
+			<span class="n">edition</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">e</span><span class="o">.</span><span class="n">has_attr</span><span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="kc">False</span> <span class="k">else</span> <span class="n">e</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+			<span class="n">results</span><span class="p">[</span><span class="s2">&quot;editions&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">edition</span><span class="p">)</span>
+			
+		<span class="c1"># the first one is always the one with the largest holdings so mark that one as largest</span>
+		<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">[</span><span class="s2">&quot;editions&quot;</span><span class="p">])</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+			<span class="n">results</span><span class="p">[</span><span class="s2">&quot;largest_holding_oclc&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s2">&quot;editions&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;oclc&#39;</span><span class="p">]</span>
+
+		<span class="k">return</span> <span class="n">results</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Our next step will be to load the Pandas module and load the data we are using, you can adjust the <code class="docutils literal notranslate"><span class="pre">sep</span></code> argument to change what delimiter is being used (for example if you are using a CSV file, change it to “,”). Once loaded we pass each record to the <code class="docutils literal notranslate"><span class="pre">add_classify()</span></code> function to kick off adding the data to the record</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">path_to_tsv</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">add_classify</span><span class="p">(</span><span class="n">d</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span> <span class="p">)</span>  
+
+<span class="c1"># we are writing out the file to the same location here, you may want to modifythe filename to create a new file, and change the sep argument if using a CSV</span>
+<span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">path_to_tsv</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">path_to_tsv</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">add_classify</span><span class="p">(</span><span class="n">d</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span> <span class="p">)</span>  
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># we are writing out the file to the same location here, you may want to modifythe filename to create a new file, and change the sep argument if using a CSV</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py:1026,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1013</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1014</span>     <span class="n">dialect</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1015</span>     <span class="n">delimiter</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1022</span>     <span class="n">dtype_backend</span><span class="o">=</span><span class="n">dtype_backend</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1023</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1024</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1026</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py:620,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">617</span> <span class="n">_validate_names</span><span class="p">(</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;names&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">619</span> <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">620</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">622</span> <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">623</span>     <span class="k">return</span> <span class="n">parser</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py:1620,</span> in <span class="ni">TextFileReader.__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1617</span>     <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1619</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">-&gt; </span><span class="mi">1620</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py:1880,</span> in <span class="ni">TextFileReader._make_engine</span><span class="nt">(self, f, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1878</span>     <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1879</span>         <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1880</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1881</span>     <span class="n">f</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1882</span>     <span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1883</span>     <span class="n">encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1884</span>     <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;compression&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1885</span>     <span class="n">memory_map</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1886</span>     <span class="n">is_text</span><span class="o">=</span><span class="n">is_text</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1887</span>     <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1888</span>     <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1889</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1890</span> <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1891</span> <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="o">.</span><span class="n">handle</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/pandas/io/common.py:873,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">868</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">869</span>     <span class="c1"># Check whether the filename is to be opened in binary mode.</span>
+<span class="g g-Whitespace">    </span><span class="mi">870</span>     <span class="c1"># Binary mode does not support &#39;encoding&#39; and &#39;newline&#39;.</span>
+<span class="g g-Whitespace">    </span><span class="mi">871</span>     <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">872</span>         <span class="c1"># Encoding</span>
+<span class="ne">--&gt; </span><span class="mi">873</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">874</span>             <span class="n">handle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">875</span>             <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">876</span>             <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">877</span>             <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">878</span>             <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">879</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">880</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">881</span>         <span class="c1"># Binary mode</span>
+<span class="g g-Whitespace">    </span><span class="mi">882</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;/path/to/the_file.tsv&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>The below code does the same thing as the block above but it breaks the CSV/TSV into multiple chunks and writes it out after each chunk, this allows for recovery from any errors such as as internet timeout or other problems that would cause you to loose all progress unless the script runs flawlessly, you would likely want to use this approch for larger datasets. Also uncomment the starting check in add_classify:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add_classify</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+
+    <span class="c1"># You can add some logic here to skip rows that already have some data if you previously ran it</span>
+    <span class="c1"># if &#39;oclc_classify&#39; in d:</span>
+    <span class="c1">#     if type(d[&#39;oclc_classify&#39;]) == str:        </span>
+    <span class="c1">#         print(&#39;Skip&#39;,d[id_author_name])</span>
+    <span class="c1">#         return d</span>
+
+</pre></div>
+</div>
+<p>To allow it to check if it needs to skip the record</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># load the tsv</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">path_to_tsv</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># we are going to split the dataframe into chunks so we can save our progress as we go but don&#39;t want to save the entire file on on every record operation</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">100</span>  <span class="c1">#chunk row size</span>
+<span class="n">list_df</span> <span class="o">=</span> <span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">n</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">n</span><span class="p">)]</span>
+
+<span class="c1"># loop through each chunk</span>
+<span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">df_chunk</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">list_df</span><span class="p">):</span>
+
+    <span class="c1"># if you want it to skip X number of chunks uncomment this, the number is the row to skip to</span>
+    <span class="c1"># if idx &lt; 10:</span>
+    <span class="c1">#     continue</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Working on chunk &quot;</span><span class="p">,</span> <span class="n">idx</span><span class="p">,</span> <span class="s1">&#39;of&#39;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">list_df</span><span class="p">))</span>
+    <span class="n">list_df</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">list_df</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">add_classify</span><span class="p">(</span><span class="n">d</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span> <span class="p">)</span>  
+
+    <span class="n">reformed_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">list_df</span><span class="p">)</span>
+    <span class="n">reformed_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">path_to_tsv</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>After running the data through this process you would have a few new fields added to the dataset the most important being the authorized heading, LCCN, VIAF and some information about the Work level. Now that we have some base identifiers in the dataset we can use other <a class="reference external" href="https://github.com/Post45-Data-Collective/data-utilities/tree/main/enrichment">scripts found here</a> that use this same approch to add even more identifiers for the author and Work/Instance. Here is an example output of running this data set through all of these scripts:</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./persistent-identifiers"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="oclc_classify_identifier.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">OCLC Classify</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Melanie Walsh & TALENT Network
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

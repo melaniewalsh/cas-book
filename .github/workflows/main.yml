@@ -31,7 +31,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r mybookpath/post45_data_collective_book/requirements.txt
+        pip install -r mybookpath/cas_book/requirements.txt
 
     # (optional) Cache your executed notebooks between runs
     # if you have config:
@@ -46,13 +46,13 @@ jobs:
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build mybookpath/post45_data_collective_book/post45_data_collective_book/
+        jupyter-book build mybookpath/cas_book/
 
     # Upload the book's HTML as an artifact
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
       with:
-        path: "mybookpath/post45_data_collective_book/post45_data_collective_book/_build/html"
+        path: "mybookpath/cas_book/_build/html"
 
     # Deploy the book's HTML to GitHub Pages
     - name: Deploy to GitHub Pages

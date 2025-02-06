@@ -1,0 +1,16 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Certificates of Freedom
+    chapters:
+    - file: certificates-of-freedom/intro.ipynb
+      title: Introduction
+    - file: certificates-of-freedom/part1.ipynb
+      title: Data Analysis — Part 1
+    - file: certificates-of-freedom/part2.ipynb
+      title: Data Analysis — Part 2
+    - file: certificates-of-freedom/part3.ipynb
+      title: Data Analysis — Part 3

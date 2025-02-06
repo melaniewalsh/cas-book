@@ -1,0 +1,1071 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Certificates Of Freedom — Data Analysis Part 1 &#8212; Computational Archival Science</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'legacy-of-slavery/part1';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Certificates Of Freedom — Data Analysis Part 2" href="part2.html" />
+    <link rel="prev" title="Piloting Interactive Data Science Learning Platforms through the Development of Cloud-based Computational Digital Notebooks" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/cases_logo.png" class="logo__image only-light" alt="Computational Archival Science - Home"/>
+    <script>document.write(`<img src="../_static/cases_logo.png" class="logo__image only-dark" alt="Computational Archival Science - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Computational Archival Science (CAS) Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Legacy of Slavery</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Piloting Interactive Data Science Learning Platforms through the Development of Cloud-based Computational Digital Notebooks</a></li>
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Certificates Of Freedom — Data Analysis Part 1</a></li>
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="part2.html">Certificates Of Freedom — Data Analysis Part 2</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="part3.html">Certificates Of Freedom — Data Analysis Part 3</a></li>
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/melaniewalsh/cas-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/melaniewalsh/cas-book/issues/new?title=Issue%20on%20page%20%2Flegacy-of-slavery/part1.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/legacy-of-slavery/part1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Certificates Of Freedom — Data Analysis Part 1</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Certificates Of Freedom — Data Analysis Part 1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#acquiring-or-accessing-the-data">Acquiring or Accessing the Data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#date-feature-issue-of-cof">Date Feature (Issue of CoF)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#below-is-a-key-function-that-identifies-the-bad-date-records-and-places-a-nat-not-a-good-date-value">Below is a key function that identifies the bad date records and places a ‘NaT’ (Not a good date) value</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#prior-status">Prior Status</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#below-is-a-key-if-function-that-tries-to-find-for-a-good-prior-status-value-in-each-column-and-converts-the-value-to-a-standard-value-others-are-given-a-unknown">Below is a key IF function that tries to find for a good prior status value in each column and converts the value to a standard value. Others are given a ‘Unknown’</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#notebooks">Notebooks</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="certificates-of-freedom-data-analysis-part-1">
+<h1>Certificates Of Freedom — Data Analysis Part 1<a class="headerlink" href="#certificates-of-freedom-data-analysis-part-1" title="Link to this heading">#</a></h1>
+<p>According to (Weintrop et al., 2015) “Data manipulation includes sorting, filtering, cleaning, normalizing, and joining disparate datasets. There are many strategies that can be employed when analyzing data for use in a scientific or mathematical context, including looking for patterns or anomalies, defining rules to categorize data, and identifying trends and correlations.” Below are the steps performed for data manipulation and analysis process using Python programming language on the Certificates of Freedom dataset. The modules are split into two parts - Part 1 and Part 2.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="acquiring-or-accessing-the-data">
+<h1>Acquiring or Accessing the Data<a class="headerlink" href="#acquiring-or-accessing-the-data" title="Link to this heading">#</a></h1>
+<p>The data for this project was originally crawled from the Maryland State Archives <strong>Legacy of Data</strong> collections. The data source is included in this module as a comma-separated values file. The link below will take you to a view the data file:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#Datasets/LoS_CoF.csv"><span class="xref myst">LoS_CoF.csv</span></a></p></li>
+</ul>
+<p>The dataset has 23,655 rows of data.</p>
+<p>To process a csv file in Python, one of the first steps is to import a Python library called as ‘pandas’ which would help the program convert the csv file into a dataframe format or commonly called as a table format. We import the library into the program as below:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Importing libraries - pandas used for data science/data analysis and machine learning tasks and numpy - which provides support for multi-dimensional arrays</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Using the pandas library, we created a new dataframe in the name ‘df’ using read_csv function as shown below: After creating the dataframe, the print() function is used to display the top 10 rows loaded in the dataframe.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># creating a data frame which is a table-like data structure that could read csv files, flat files, and other delimited data.</span>
+<span class="c1"># Converting input data into a data frame is a key starting point with Python programming language for big data analytics</span>
+<span class="c1"># Below command reads in the Certificates of Freedom dataset which should already be loaded in a folder called &#39;Datasets&#39; as LoS_CoF.csv</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Datasets/LoS_CoF.csv&quot;</span><span class="p">)</span> 
+<span class="c1"># Below command prints the first 10 records after the data is copied from the csv file</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">4</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># creating a data frame which is a table-like data structure that could read csv files, flat files, and other delimited data.</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># Converting input data into a data frame is a key starting point with Python programming language for big data analytics</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># Below command reads in the Certificates of Freedom dataset which should already be loaded in a folder called &#39;Datasets&#39; as LoS_CoF.csv</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;Datasets/LoS_CoF.csv&quot;</span><span class="p">)</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># Below command prints the first 10 records after the data is copied from the csv file</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py:1026,</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options, dtype_backend)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1013</span> <span class="n">kwds_defaults</span> <span class="o">=</span> <span class="n">_refine_defaults_read</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1014</span>     <span class="n">dialect</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1015</span>     <span class="n">delimiter</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1022</span>     <span class="n">dtype_backend</span><span class="o">=</span><span class="n">dtype_backend</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1023</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1024</span> <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1026</span> <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py:620,</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
+<span class="g g-Whitespace">    </span><span class="mi">617</span> <span class="n">_validate_names</span><span class="p">(</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;names&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+<span class="g g-Whitespace">    </span><span class="mi">619</span> <span class="c1"># Create the parser.</span>
+<span class="ne">--&gt; </span><span class="mi">620</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">622</span> <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">623</span>     <span class="k">return</span> <span class="n">parser</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py:1620,</span> in <span class="ni">TextFileReader.__init__</span><span class="nt">(self, f, engine, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1617</span>     <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
+<span class="g g-Whitespace">   </span><span class="mi">1619</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="p">:</span> <span class="n">IOHandles</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="ne">-&gt; </span><span class="mi">1620</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/pandas/io/parsers/readers.py:1880,</span> in <span class="ni">TextFileReader._make_engine</span><span class="nt">(self, f, engine)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1878</span>     <span class="k">if</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1879</span>         <span class="n">mode</span> <span class="o">+=</span> <span class="s2">&quot;b&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1880</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1881</span>     <span class="n">f</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1882</span>     <span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1883</span>     <span class="n">encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1884</span>     <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;compression&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1885</span>     <span class="n">memory_map</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1886</span>     <span class="n">is_text</span><span class="o">=</span><span class="n">is_text</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1887</span>     <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1888</span>     <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+<span class="g g-Whitespace">   </span><span class="mi">1889</span> <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1890</span> <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+<span class="g g-Whitespace">   </span><span class="mi">1891</span> <span class="n">f</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="o">.</span><span class="n">handle</span>
+
+<span class="nn">File ~/anaconda3/lib/python3.11/site-packages/pandas/io/common.py:873,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">868</span> <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">869</span>     <span class="c1"># Check whether the filename is to be opened in binary mode.</span>
+<span class="g g-Whitespace">    </span><span class="mi">870</span>     <span class="c1"># Binary mode does not support &#39;encoding&#39; and &#39;newline&#39;.</span>
+<span class="g g-Whitespace">    </span><span class="mi">871</span>     <span class="k">if</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span> <span class="ow">and</span> <span class="s2">&quot;b&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">872</span>         <span class="c1"># Encoding</span>
+<span class="ne">--&gt; </span><span class="mi">873</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">874</span>             <span class="n">handle</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">875</span>             <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">876</span>             <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">877</span>             <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">878</span>             <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">879</span>         <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">880</span>     <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">881</span>         <span class="c1"># Binary mode</span>
+<span class="g g-Whitespace">    </span><span class="mi">882</span>         <span class="n">handle</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">handle</span><span class="p">,</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">mode</span><span class="p">)</span>
+
+<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;Datasets/LoS_CoF.csv&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<p>Of these features, the below ones were chosen to be cleaned and manipulated for use in the following steps for simplicity purposes.</p>
+<ol class="arabic simple">
+<li><p>Date – This indicates the date of issue of Certificate of Freedom</p></li>
+<li><p>Prior Status – Prior status of the Enslaved person before issue of the CoF document</p></li>
+<li><p>Height – Height of the Enslaved person</p></li>
+<li><p>Age – Age at the time of document issue</p></li>
+</ol>
+<p>We anticipated errors and misinterpretation of names, numbers, etc. since this database was mostly transcribed manually by hand from the physical or scanned copies of the Certificates of Freedom. Our approach was to individually explore and clean the aforementioned columns utilizing the text and numerical operation functions in Python programming language for this purpose mostly. We looked at the dataset holistically at first, identifying features that allowed us to generate meaningful stories or visualizations. Upon confirmation of the features list, we analyzed each of them in detail to document bad data and eliminate them if possible, modify data types, exclude them from the final visualizations if found to be invalid, etc</p>
+<p>This project involved team members from a diverse group of technology, historical, and archivist background. There were opportunities to work individually or to work in groups, but we decided to do a hybrid setup of analyzing alone and reporting the results back to the group for discussion. With respect to the analysis performed on the dataset, decisions were data-driven or historical facts driven.</p>
+<p>Through researching the literature, conversations with historians and experts in the field, discussions with archivists from the Maryland State Archives, the team members followed a set of steps where certain unique characteristics of a particular feature for instance were identified and shared with the entire group for their inputs before finalizing the results</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="date-feature-issue-of-cof">
+<h1>Date Feature (Issue of CoF)<a class="headerlink" href="#date-feature-issue-of-cof" title="Link to this heading">#</a></h1>
+<p>Through healthy discussions on what-if scenarios as most of the data were historical and we were bringing each of our expertise into the conversations, several insights were gleaned for specific columns which were vital to this Project. Also there were discussions on how data should be presented, collected, and analyzed without impacting the sensitivity of the people involved, especially since this set of collection was unique.</p>
+<p>One of them is the date, there were different formats of date captured in the transcribed collection. This field is to indicate the date when the certificate of freedom was prepared and signed. There were a number of issues with this date field in the original dataset. Different date formats – There were around 600 records with NULL value, a bunch of them with just YYYYMM format, most of them in the format YYYY-MM-DD and YYYYMMDD format.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Below command prints out the descriptive details of the column &#39;Date&#39;</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>count          23057
+unique          9956
+top       1832-05-28
+freq             296
+Name: Date, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Below command list the number of null or na values in the &#39;Date&#39; column of the data frame</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>598
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Below command displays an array of unique date values in the &#39;Date&#39; column</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([nan, &#39;1811-06-24&#39;, &#39;1815-03-28&#39;, ..., &#39;18430912&#39;, &#39;18430913&#39;,
+       &#39;18430916&#39;], dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+<p>As could be seen above, there are different formats for the date column, some with missing month etc, some of these were manually verified for accuracy by checking the scanned documents from the MSA database as shown below:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Below command replaces all Null or nan values to the literal &#39;None&#39; for ease of manipulation later in the process</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Date&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="s1">&#39;None&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Date&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;None&#39;, &#39;1811-06-24&#39;, &#39;1815-03-28&#39;, ..., &#39;18430912&#39;, &#39;18430913&#39;,
+       &#39;18430916&#39;], dtype=object)
+</pre></div>
+</div>
+</div>
+</div>
+<section id="below-is-a-key-function-that-identifies-the-bad-date-records-and-places-a-nat-not-a-good-date-value">
+<h2>Below is a key function that identifies the bad date records and places a ‘NaT’ (Not a good date) value<a class="headerlink" href="#below-is-a-key-function-that-identifies-the-bad-date-records-and-places-a-nat-not-a-good-date-value" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Below command creates a new column &#39;DateFormatted&#39; on-the-fly (one of the cool things I like about python) and is copied with the results from the &#39;Date&#39; column using a </span>
+<span class="c1"># transformation function called &#39;to_datetime()&#39; by passing in the parameter &#39;error=coerce&#39; which converts all erroneous date values into a string called &#39;NaT&#39;</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;DateFormatted&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Date&quot;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s2">&quot;coerce&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Below command prints the unique converted date values from the newly created column and also displays &#39;NaT&#39; for errorneous date values.</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;DateFormatted&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([                          &#39;NaT&#39;, &#39;1811-06-24T00:00:00.000000000&#39;,
+       &#39;1815-03-28T00:00:00.000000000&#39;, ...,
+       &#39;1843-08-22T00:00:00.000000000&#39;, &#39;1843-08-24T00:00:00.000000000&#39;,
+       &#39;1843-09-12T00:00:00.000000000&#39;], dtype=&#39;datetime64[ns]&#39;)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Below command prints a sample of the output for the new columns &#39;Date&#39; and &#39;DateFormatted&#39; side-by-side to show how the original field values were transformed to a proper date</span>
+<span class="c1"># format and the bad values are given a &#39;NaT&#39;</span>
+<span class="n">df</span><span class="p">[[</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span><span class="s1">&#39;DateFormatted&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Date</th>
+      <th>DateFormatted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>None</td>
+      <td>NaT</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1811-06-24</td>
+      <td>1811-06-24</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1811-06-24</td>
+      <td>1811-06-24</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1815-03-28</td>
+      <td>1815-03-28</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1837-07-10</td>
+      <td>1837-07-10</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>23650</th>
+      <td>18430826</td>
+      <td>1843-08-26</td>
+    </tr>
+    <tr>
+      <th>23651</th>
+      <td>18430905</td>
+      <td>1843-09-05</td>
+    </tr>
+    <tr>
+      <th>23652</th>
+      <td>18430912</td>
+      <td>1843-09-12</td>
+    </tr>
+    <tr>
+      <th>23653</th>
+      <td>18430913</td>
+      <td>1843-09-13</td>
+    </tr>
+    <tr>
+      <th>23654</th>
+      <td>18430916</td>
+      <td>1843-09-16</td>
+    </tr>
+  </tbody>
+</table>
+<p>23655 rows × 2 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">bad_date</span><span class="o">=</span><span class="p">[]</span>
+<span class="c1"># Below function is a loop function which processes each value of the new column &#39;DateFormatted&#39; to check for invalid value marker &#39;NaT&#39; and if found, it picks up the original </span>
+<span class="c1"># value from the &#39;Date&#39; column and appends to a list. Once all the records are checked, it prints the unique values of this list using the &#39;set&#39; function and the total number of </span>
+<span class="c1"># bad ones</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;DateFormatted&#39;</span><span class="p">])):</span>
+    <span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">isna</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;DateFormatted&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]):</span>
+        <span class="n">bad_date</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">])</span>
+        <span class="n">x</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">bad_date</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of Bad date records&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of unique items in the Bad date&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">bad_date</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;1845-19-05&#39;, &#39;1856-01-00&#39;, &#39;1836-09-31&#39;, &#39;1821-00-00&#39;, &#39;1855-01-00&#39;, &#39;1829-04-31&#39;, &#39;1819-04-00&#39;, &#39;1819-12-00&#39;, &#39;184004&#39;, &#39;1819-00-00&#39;, &#39;184006&#39;, &#39;1823-00-00&#39;, &#39;Kamer&#39;, &#39;1822-00-00&#39;, &#39;1854-00-00&#39;, &#39;1831-04-31&#39;, &#39;1816-19-06&#39;, &#39;1853-00-00&#39;, &#39;1858-09-31&#39;, &#39;1816-17-23&#39;, &#39;1840516&#39;, &#39;1859-00-00&#39;, &#39;1815-16-20&#39;, &#39;189390417&#39;, &#39;1802-30-30&#39;, &#39;1830-04-31&#39;, &#39;1846-05-00&#39;, &#39;1819-07-00&#39;, &#39;1842-00-00&#39;, &#39;1819-03-00&#39;, &#39;1855-00-00&#39;, &#39;None&#39;, &#39;1858-12-00&#39;, &#39;1819-15-04&#39;, &#39;1856-02-30&#39;, &#39;18404024&#39;, &#39;1847-00-00&#39;, &#39;1858-08-00&#39;, &#39;1854-08-00&#39;, &#39;1860-09-00&#39;, &#39;1807-07-33&#39;, &#39;1819-15-10&#39;}
+Number of Bad date records 657
+Number of unique items in the Bad date 42
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Below command displays the specific records that was identified as erroneously entered. The inner command &#39;df[]&#39; first converts the &#39;Date&#39; feature to a &#39;String&#39; data type, and then uses another</span>
+<span class="c1"># in-built function to filter the records that match with the supplied criteria and the outer &#39;df[]&#39; displays the results of that filtered records from the inner dataframe.</span>
+<span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Date&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">==</span><span class="s2">&quot;184006&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DataID</th>
+      <th>DataItem</th>
+      <th>County</th>
+      <th>Owner_FirstName</th>
+      <th>Owner_LastName</th>
+      <th>Witness</th>
+      <th>Date</th>
+      <th>Freed_FirstName</th>
+      <th>Freed_LastName</th>
+      <th>Alias</th>
+      <th>...</th>
+      <th>Document</th>
+      <th>Page</th>
+      <th>Entry</th>
+      <th>DatasetName</th>
+      <th>Notes</th>
+      <th>isWorking</th>
+      <th>isError</th>
+      <th>ChangeDate</th>
+      <th>CreateDate</th>
+      <th>DateFormatted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>23307</th>
+      <td>AR7-46</td>
+      <td>23310</td>
+      <td>BA</td>
+      <td>Geo</td>
+      <td>Gillingham</td>
+      <td>NaN</td>
+      <td>184006</td>
+      <td>Jeremiah W.</td>
+      <td>Brown</td>
+      <td>Jerry</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>224.0</td>
+      <td>5.0</td>
+      <td>FF</td>
+      <td>Freed by manumission, dated 15 June 1824, reco...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>37:45.8</td>
+      <td>03:44.1</td>
+      <td>NaT</td>
+    </tr>
+    <tr>
+      <th>23308</th>
+      <td>AR7-46</td>
+      <td>23311</td>
+      <td>BA</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>184006</td>
+      <td>Rachael</td>
+      <td>Brown</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>224.0</td>
+      <td>6.0</td>
+      <td>FF</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>37:45.8</td>
+      <td>05:54.2</td>
+      <td>NaT</td>
+    </tr>
+  </tbody>
+</table>
+<p>2 rows × 29 columns</p>
+</div></div></div>
+</div>
+<p>In two of the instances, as seen below, the day of issue has not been found to be legible or visible, hence the MSA transcriber may have not been able recorded the date. There was no date but only month and year captured on the original CoF itself for c290 page 224 - Jeremiah Brown</p>
+<p><img alt="DateIssue1" src="../_images/CoF_Data_Clean_Empty_Date1.PNG" />
+<img alt="DateIssue2" src="../_images/CoF_Data_Clean_Empty_Date1.PNG" /></p>
+<p>Another instance of data entry error was for c290 page 185 Charles W Jones as shown below with the date captured as 1840516 instead of 18400516</p>
+<p><img alt="DateIssue3" src="../_images/CoF_Data_Clean_Incorrect_Date.PNG" /></p>
+<p>All these 657 bad date records were identified and marked with ‘NaT’ and would not be used for further processing. However, the entire record was not removed as there could be other useful features that could provide us with some good insights. These ‘NaT’ date records would be shared with the MSA, to fix their Source of Record.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="prior-status">
+<h1>Prior Status<a class="headerlink" href="#prior-status" title="Link to this heading">#</a></h1>
+<p>This feature indicates the previous status of the enslaved person while the CoF document was being issued. This holds historical importance and needed carefule inputs from the historians. To address the issues with this feature in CoF dataset - Prior Status Column: Research was conducted to determine the prior status of those who were categorized as a “Descendant of a white female woman” as shown below from the set of unique categories. Source: Wikipedia - History of slavery in Maryland. This research was beneficial in identifying what group certain observations belong to.</p>
+<p><img alt="PriorStatus" src="../_images/CoF_Data_Clean_Prior_Status.PNG" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># df is the data frame variable which stores the entire dataset in a table form. Below command converts the specific column or feature &#39;PriorStatus&#39; as Categorical type instead of String for manipulation</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;PriorStatus&quot;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;PriorStatus&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;category&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Below list shows the different formats of the Prior Status as transcribed and it shows that these entries have to be grouped together by customized cleaning process.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># After conversion, let&#39;s print the number of categories available for that particular feature from the dataset</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;PriorStatus&quot;</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{nan, &#39;slave&#39;, &#39;Born Free&#39;, &#39;Free born&#39;, &#39;free born&#39;, &#39;Free Born&#39;, &#39;Descendant of a white female woman&#39;, &#39;S;ave&#39;, &#39;Slave; Slave&#39;, &#39;Enslaved&#39;, &#39;Free&#39;, &#39;?&#39;, &#39;born free&#39;, &#39;Unknown; Free Born&#39;, &#39;Unknown&#39;, &#39;Freeborn&#39;, &#39;Slave&#39;, &#39;Slave &#39;, &#39;Free; Slave&#39;, &#39;John&#39;, &#39;Unknown; Slave&#39;, &#39;Born free&#39;, &#39;Free  &#39;, &#39;Free born &#39;, &#39;BornFree&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+<section id="below-is-a-key-if-function-that-tries-to-find-for-a-good-prior-status-value-in-each-column-and-converts-the-value-to-a-standard-value-others-are-given-a-unknown">
+<h2>Below is a key IF function that tries to find for a good prior status value in each column and converts the value to a standard value. Others are given a ‘Unknown’<a class="headerlink" href="#below-is-a-key-if-function-that-tries-to-find-for-a-good-prior-status-value-in-each-column-and-converts-the-value-to-a-standard-value-others-are-given-a-unknown" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># As could be seen above, there are various types of Prior Status that are similar in nature. the value &#39;nan&#39; in Python means it has no values.</span>
+<span class="c1"># Below set of commands form a component in Python called as a function. Functions are a block of commands which could be used to perform the same action every time they are called.</span>
+<span class="c1"># The below function converts the input parameter to the right Prior Status category based on some conditional statements.</span>
+<span class="k">def</span> <span class="nf">fix_prior_status</span><span class="p">(</span><span class="n">status</span><span class="p">):</span>
+    <span class="c1"># initiate variables to hold the literal value</span>
+    <span class="n">free</span> <span class="o">=</span> <span class="s2">&quot;free&quot;</span>
+    <span class="n">born</span> <span class="o">=</span> <span class="s2">&quot;born&quot;</span>
+    <span class="n">enslaved</span> <span class="o">=</span> <span class="s2">&quot;slave&quot;</span>
+    <span class="n">descend</span> <span class="o">=</span> <span class="s2">&quot;Descend&quot;</span>
+    <span class="c1"># conditional statements to use in-built &#39;find&#39; function to check if the prior status passed has the value of the literal checked, and if so the status would be modified as mentioned</span>
+    <span class="c1"># in the &#39;return&#39; statement</span>
+    <span class="k">if</span> <span class="n">status</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">born</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+        <span class="c1"># it should also be noted that indentation is a key requirement with Python, not where the return statement starts after the &#39;if&#39;</span>
+        <span class="k">return</span> <span class="s2">&quot;Born Free&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># nested if&#39;s are possible in Python to conditionally control the else logic</span>
+        <span class="k">if</span> <span class="n">status</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">enslaved</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;Slave&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">status</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">descend</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                <span class="k">return</span> <span class="s2">&quot;Born Free&quot;</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">if</span> <span class="n">status</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">free</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="s2">&quot;Free&quot;</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="s2">&quot;Unknown&quot;</span>
+<span class="c1"># Below command starts with the beginning indentation indicating a new set of commands outside of the function, even if its in the same cell block like shown here.</span>
+<span class="c1"># The &#39;apply&#39; function applies the function definted above to the data frame&#39;s each records&#39; Prior Status field avlue. </span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;PriorStatusFormatted&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;PriorStatus&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">fix_prior_status</span><span class="p">)</span>
+<span class="c1"># The &#39;unique&#39; in-built function prints out the distinct values of the transformed or modified prior status of the data frame</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;PriorStatusFormatted&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;Unknown&#39; &#39;Slave&#39; &#39;Born Free&#39; nan &#39;Free&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<p>As with the date field, those values that did not fall into one of these good categories they were assigned a ‘Unknown’ value.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Below commands help us to save the modified dataframe into a new output csv file which could be used in further steps of processing in the next notebook modules.</span>
+<span class="n">dfo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">dfo</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;Datasets/LoS_Clean_Output_Mod1.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="notebooks">
+<h1>Notebooks<a class="headerlink" href="#notebooks" title="Link to this heading">#</a></h1>
+<p>The below module is organized into a sequential set of Python Notebooks that allows to interact with the Legacy of Slavery’s Certificates of Freedom collection by exploring, cleaning, preparing, visualizing and analysing it from historical context perspective.</p>
+<ol class="arabic simple" start="2">
+<li><p><a class="reference internal" href="#LoS_CoF_Module2.ipynb"><span class="xref myst">Certificates Of Freedom: Context Based Data Manipulation and Analysis -Part 2</span></a></p></li>
+<li><p><a class="reference internal" href="#LoS_CoF_Module3.ipynb"><span class="xref myst">Certificates Of Freedom: Context Based Data Visualization</span></a><strong>(If you get a 500 Internal Server Error, please refresh the browser to render this module again)</strong></p></li>
+</ol>
+<p><a class="reference internal" href="#LoS_CoF_Module2.ipynb"><span class="xref myst">Click here to go the Next Module</span></a></p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./legacy-of-slavery"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Piloting Interactive Data Science Learning Platforms through the Development of Cloud-based Computational Digital Notebooks</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="part2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Certificates Of Freedom — Data Analysis Part 2</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Certificates Of Freedom — Data Analysis Part 1</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#acquiring-or-accessing-the-data">Acquiring or Accessing the Data</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#date-feature-issue-of-cof">Date Feature (Issue of CoF)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#below-is-a-key-function-that-identifies-the-bad-date-records-and-places-a-nat-not-a-good-date-value">Below is a key function that identifies the bad date records and places a ‘NaT’ (Not a good date) value</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#prior-status">Prior Status</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#below-is-a-key-if-function-that-tries-to-find-for-a-good-prior-status-value-in-each-column-and-converts-the-value-to-a-standard-value-others-are-given-a-unknown">Below is a key IF function that tries to find for a good prior status value in each column and converts the value to a standard value. Others are given a ‘Unknown’</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#notebooks">Notebooks</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Melanie Walsh & TALENT Network
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

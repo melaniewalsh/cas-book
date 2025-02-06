@@ -1,0 +1,1135 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Certificates Of Freedom — Data Analysis Part 2 &#8212; Computational Archival Science</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'legacy-of-slavery/part2';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Certificates Of Freedom — Data Analysis Part 3" href="part3.html" />
+    <link rel="prev" title="Certificates Of Freedom — Data Analysis Part 1" href="part1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/cases_logo.png" class="logo__image only-light" alt="Computational Archival Science - Home"/>
+    <script>document.write(`<img src="../_static/cases_logo.png" class="logo__image only-dark" alt="Computational Archival Science - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Computational Archival Science (CAS) Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Legacy of Slavery</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Piloting Interactive Data Science Learning Platforms through the Development of Cloud-based Computational Digital Notebooks</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="part1.html">Certificates Of Freedom — Data Analysis Part 1</a></li>
+
+
+
+
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Certificates Of Freedom — Data Analysis Part 2</a></li>
+
+
+<li class="toctree-l1"><a class="reference internal" href="part3.html">Certificates Of Freedom — Data Analysis Part 3</a></li>
+
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/melaniewalsh/cas-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/melaniewalsh/cas-book/issues/new?title=Issue%20on%20page%20%2Flegacy-of-slavery/part2.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/legacy-of-slavery/part2.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Certificates Of Freedom — Data Analysis Part 2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Certificates Of Freedom — Data Analysis Part 2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#height-feature">Height Feature</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#below-is-a-key-function-that-coverts-bad-height-format-and-feet-inches-into-a-standardized-inches-format-bad-ones-will-be-given-a-nan">Below is a key function that coverts bad height format and feet + inches into a standardized inches format. Bad ones will be given a ‘NaN’</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#age-feature">Age feature</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#below-is-a-key-function-that-converts-bad-decimal-values-transcrbed-into-a-good-decimal-fraction-of-a-year-for-example-0-18-was-transcribed-for-18-months-this-was-converted-to-1-5-years">Below is a key function that converts bad decimal values transcrbed into a good decimal fraction of a year. For example, 0.18 was transcribed for 18 months, this was converted to 1.5 years.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#notebooks">Notebooks</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="certificates-of-freedom-data-analysis-part-2">
+<h1>Certificates Of Freedom — Data Analysis Part 2<a class="headerlink" href="#certificates-of-freedom-data-analysis-part-2" title="Link to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="height-feature">
+<h1>Height Feature<a class="headerlink" href="#height-feature" title="Link to this heading">#</a></h1>
+<p>This field is to indicate the height of the individual freed in feet and inches.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># import libraries used for data frame (table-like) operations, and numeric data structure operations</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#code to import the csv saved from the previous step</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/cases-umd/Legacy-of-Slavery/refs/heads/master/Datasets/LoS_Clean_Output_Mod1.csv&quot;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#code to pull the error above</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0          5&#39; 3&quot;
+1          5&#39; 3&quot;
+2           5&#39;3&quot;
+3        5&#39;7.75&quot;
+4         4&#39;9.5&quot;
+          ...   
+23650    5&#39;8.25&quot;
+23651       5&#39;9&quot;
+23652     5&#39;7.5&quot;
+23653       5&#39;7&quot;
+23654       5&#39;5&quot;
+Name: Height, Length: 23655, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#code to pull the specific error above</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>count     22325
+unique      533
+top        5&#39;4&quot;
+freq       1134
+Name: Height, dtype: object
+</pre></div>
+</div>
+</div>
+</div>
+<section id="below-is-a-key-function-that-coverts-bad-height-format-and-feet-inches-into-a-standardized-inches-format-bad-ones-will-be-given-a-nan">
+<h2>Below is a key function that coverts bad height format and feet + inches into a standardized inches format. Bad ones will be given a ‘NaN’<a class="headerlink" href="#below-is-a-key-function-that-coverts-bad-height-format-and-feet-inches-into-a-standardized-inches-format-bad-ones-will-be-given-a-nan" title="Link to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#code to split the Height into feet and inches</span>
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="c1"># this is a regex script which looks for a matching pattern in the input string. </span>
+<span class="c1"># https://docs.python.org/3/library/re.html</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;([0-9]+)&#39;([0-9]*\.?[0-9]+|)&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">format_height</span><span class="p">(</span><span class="n">el</span><span class="p">):</span>
+    <span class="n">el_new</span> <span class="o">=</span><span class="n">el</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">r</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">el_new</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">m</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;NaN&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span><span class="o">*</span><span class="mi">12</span> <span class="o">+</span> <span class="p">(</span><span class="mi">0</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="k">else</span> <span class="nb">float</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)))</span>
+    
+<span class="c1"># Some of the records have been transcribed as mixed fractions rather than decimal values. These values have to be converted to inches using different Python formula as discussed below.    </span>
+<span class="kn">from</span> <span class="nn">fractions</span> <span class="kn">import</span> <span class="n">Fraction</span>
+<span class="k">def</span> <span class="nf">format_height_type2</span><span class="p">(</span><span class="n">el</span><span class="p">):</span>  
+    <span class="n">el_new</span> <span class="o">=</span><span class="n">el</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&quot;&#39;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+    <span class="n">el_new</span> <span class="o">=</span><span class="n">el_new</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\&#39;</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">el_new</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">el_new</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">line</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">el_new</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;NaN&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">el_new</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">*</span><span class="mi">12</span> <span class="o">+</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">el_new</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="nb">float</span><span class="p">(</span><span class="n">Fraction</span><span class="p">(</span><span class="n">el_new</span><span class="p">[</span><span class="mi">2</span><span class="p">])))</span>    
+<span class="c1"># Below command starts with the beginning indentation indicating a new set of commands outside of the function, even if its in the same cell block like shown here.</span>
+<span class="c1"># The &#39;apply&#39; function applies the function definted above to the data frame&#39;s each records&#39; Prior Status field avlue. </span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">format_height_type2</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span> <span class="k">else</span> <span class="n">format_height</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># show descriptive statistics</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>count    22320.00000
+mean        64.36112
+std          4.13348
+min         21.50000
+25%         62.00000
+50%         64.50000
+75%         67.00000
+max        145.00000
+Name: Height_Inches, dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># show distinct height values</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([ 63.        ,  67.75      ,  57.5       ,  61.5       ,
+        66.5       ,  61.        ,  66.25      ,  66.        ,
+                nan,  70.        ,  62.        ,  63.25      ,
+        63.75      ,  64.5       ,  65.25      ,  65.75      ,
+        67.5       ,  67.        ,  68.        ,  68.5       ,
+        60.        ,  69.        ,  73.        ,  63.5       ,
+        61.25      ,  64.        ,  65.        ,  71.        ,
+        65.5       ,  64.75      ,  59.        ,  62.25      ,
+        62.75      ,  69.25      ,  58.        ,  59.25      ,
+        70.5       ,  62.5       ,  60.5       ,  64.25      ,
+        59.5       ,  61.75      ,  72.        ,  69.75      ,
+        59.75      ,  60.75      ,  60.125     ,  61.24      ,
+        67.125     ,  66.75      ,  67.25      ,  69.5       ,
+        68.75      ,  60.25      ,  61.375     ,  57.        ,
+        71.25      ,  56.        ,  58.25      ,  57.75      ,
+        68.25      ,  71.5       ,  66.6       ,  64.125     ,
+        64.625     ,  71.75      ,  65.875     ,  72.5       ,
+        70.75      ,  72.25      ,  56.5       ,  56.75      ,
+        57.25      ,  72.75      ,  73.25      ,  73.75      ,
+        72.375     ,  73.875     ,  24.        ,  50.        ,
+        52.        ,  60.24      ,  66.625     ,  58.75      ,
+        68.125     ,  47.75      ,  47.        ,  58.125     ,
+        58.5       ,  59.125     ,  60.3       ,  70.25      ,
+        73.5       ,  74.        ,  75.        ,  61.625     ,
+        61.2       ,  62.125     ,  55.75      ,  48.75      ,
+        64.875     ,  54.5       ,  48.        ,  46.5       ,
+        61.1       ,  54.25      ,  66.125     ,  53.        ,
+        54.        ,  55.        ,  48.5       ,  51.        ,
+        55.25      ,  55.5       ,  60.05      ,  44.125     ,
+        40.        ,  45.        ,  50.5       ,  51.75      ,
+        92.75      ,  62.3       ,  42.        ,  69.625     ,
+        60.625     ,  65.125     ,  63.125     ,  75.25      ,
+        81.4       ,  62.15      ,  63.625     ,  49.        ,
+        51.5       ,  68.27272727, 145.        ,  76.        ,
+        69.125     ,  68.875     ,  36.        ,  41.5       ,
+        66.4       ,  53.5       ,  53.75      ,  27.        ,
+        39.25      ,  64.73      ,  65.34      ,  58.625     ,
+        64.2       ,  61.125     ,  75.5       ,  66.875     ,
+        46.        ,  69.875     ,  74.25      ,  63.875     ,
+        64.74      ,  52.5       ,  52.25      ,  53.25      ,
+        54.75      ,  56.25      ,  57.625     ,  60.875     ,
+        65.625     ,  71.625     ,  62.375     ,  62.625     ,
+        33.5       ,  38.        ,  39.5       ,  44.5       ,
+        59.05      ,  66.375     ,  47.25      ,  59.625     ,
+        60.275     ,  60.375     ,  61.875     ,  74.5       ,
+        49.25      ,  77.        ,  30.5       ,  40.75      ,
+        31.        ,  62.675     ,  75.75      ,  68.33      ,
+        59.875     ,  68.625     ,  67.875     , 108.75      ,
+        66.2       ,  63.2       ,  69.2       ,  69.4       ,
+        78.5       ,  78.        ,  62.2       ,  35.        ,
+        41.        ,  43.        ,  44.        ,  26.        ,
+        67.675     ,  60.66      ,  21.5       ,  45.5       ,
+        49.75      ,  65.3       ,  37.5       ,  65.2       ,
+        72.05      ,  72.125     ,  70.125     ,  65.375     ,
+        63.375     ,  63.74      ,  34.5       ,  39.        ,
+        34.        ,  47.5       ,  33.        ,  36.5       ,
+        26.75      ,  32.        ,  28.5       ,  30.        ,
+        29.        ,  42.5       ,  37.        ,  29.5       ,
+        49.5       ,  40.5       ,  32.5       ,  31.5       ,
+        48.92      ,  38.5       ])
+</pre></div>
+</div>
+</div>
+</div>
+<p>A study by (Margo &amp; Steckel, 1982), which performed an analysis of the height vs age from the EnSlaved Mainfest data of around 50000+ enslaved people shipped between 1811 and 1861 to ports like Baltimore, Richmond and other cities from the Port of Savannah. According to this study, the average heights of tallest enslaved people was around 67 inches. In the same study where another set of Enslaved People’s appraisal records showed the maximum height was found to be around 72 inches. Found below are the images from this study showing the different heights by age.</p>
+<p><img alt="Height_by_age" src="../_images/Height_Enslaved_Manifests.png" /></p>
+<p><img alt="Max_Height_by_Weight" src="../_images/Height_Mississippi_chart.PNG" /></p>
+<p>The above charts raise doubts on the unique values we observed to be higher than 80 inches and lesser than 5 inches. Thus, separating these records from the dataframe below shows the different representation of the Height during transcription.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># code to show bad records</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">80</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">),[</span><span class="s1">&#39;DataItem&#39;</span><span class="p">,</span><span class="s1">&#39;Height&#39;</span><span class="p">,</span><span class="s1">&#39;Height_Inches&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DataItem</th>
+      <th>Height</th>
+      <th>Height_Inches</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>5032</th>
+      <td>5034</td>
+      <td>4' 44.75"</td>
+      <td>92.75</td>
+    </tr>
+    <tr>
+      <th>5625</th>
+      <td>5627</td>
+      <td>5'2 1.4"</td>
+      <td>81.40</td>
+    </tr>
+    <tr>
+      <th>6197</th>
+      <td>6199</td>
+      <td>5'85."</td>
+      <td>145.00</td>
+    </tr>
+    <tr>
+      <th>15694</th>
+      <td>15696</td>
+      <td>9'.75"</td>
+      <td>108.75</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>The above values have to be manually handled by looking into the scanned documents and finding their right values as discussed below:</p>
+<p>One of entries shown above where the height was mentioned as 4 feet 44.75 inches belonged to the enslaved person Milly Farmer c477-2, page 200, upon looking at the scanned document it was really captured as 4 feet 11.75 inches as found below from the document:</p>
+<p><img alt="HeightIssue4" src="../_images/CoF_Data_Preparation_Height_Incorrect4.PNG" /></p>
+<p>Also, it should be noted that there is record which was entered with a height of 9’.75” which clearly seems like an impossible value. This had to be handled by attempting to manually look at the Certificate of Freedom record from the scanned documents. Upon analyzing we found that there was no CoF scanned document found for this person (Cof ID: 15696). It mentions that under note that this person was manumitted but we could not find the documents under Manumitted records as well. Hence, the height record was changed as NaN for this record.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Code to show bad records </span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">())</span><span class="o">&amp;</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">notna</span><span class="p">()),[</span><span class="s2">&quot;DataItem&quot;</span><span class="p">,</span><span class="s2">&quot;Height&quot;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DataItem</th>
+      <th>Height</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>7859</th>
+      <td>7861</td>
+      <td>5 5"</td>
+    </tr>
+    <tr>
+      <th>11492</th>
+      <td>11494</td>
+      <td>illegible</td>
+    </tr>
+    <tr>
+      <th>12837</th>
+      <td>12839</td>
+      <td>5"</td>
+    </tr>
+    <tr>
+      <th>15175</th>
+      <td>15177</td>
+      <td>5"</td>
+    </tr>
+    <tr>
+      <th>16964</th>
+      <td>16966</td>
+      <td>5"1"</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>Other data capture issues were corrected by looking at the original scanned CoF as shown below: the height was noted as 5 5” which was in fact 5” 5’ - 5 feet 5 inches
+<img alt="HeightIssue2" src="../_images/CoF_Data_Preparation_Height_Incorrect2.PNG" /></p>
+<p>From above code result, we identify that there are some invalid representations of the height where the transcribers did not follow the procedures to enter single quotes for Feet and double quotes for inches. These have to be manually handled as well.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#code to manually update the issues identified above with the corrected value in inches</span>
+<span class="c1"># We directly use the dataitem id as shown above to update the records.</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;DataItem&quot;</span><span class="p">]</span><span class="o">==</span><span class="mi">5034</span><span class="p">),</span> <span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span> <span class="o">=</span><span class="mf">59.75</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;DataItem&quot;</span><span class="p">]</span><span class="o">==</span><span class="mi">5627</span><span class="p">),</span> <span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span> <span class="o">=</span><span class="mf">63.40</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;DataItem&quot;</span><span class="p">]</span><span class="o">==</span><span class="mi">6199</span><span class="p">),</span> <span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span> <span class="o">=</span><span class="kc">None</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;DataItem&quot;</span><span class="p">]</span><span class="o">==</span><span class="mi">15696</span><span class="p">),</span> <span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span> <span class="o">=</span><span class="kc">None</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;DataItem&quot;</span><span class="p">]</span><span class="o">==</span><span class="mi">7861</span><span class="p">),</span> <span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span> <span class="o">=</span><span class="mf">65.00</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;DataItem&quot;</span><span class="p">]</span><span class="o">==</span><span class="mi">11494</span><span class="p">),</span> <span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span> <span class="o">=</span><span class="kc">None</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;DataItem&quot;</span><span class="p">]</span><span class="o">==</span><span class="mi">12839</span><span class="p">),</span> <span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span> <span class="o">=</span><span class="mf">60.00</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;DataItem&quot;</span><span class="p">]</span><span class="o">==</span><span class="mi">15177</span><span class="p">),</span> <span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span> <span class="o">=</span><span class="mf">60.00</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;DataItem&quot;</span><span class="p">]</span><span class="o">==</span><span class="mi">16966</span><span class="p">),</span> <span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span> <span class="o">=</span><span class="mf">61.00</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># show height values that are outliers and invalid values</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">80</span><span class="p">)</span><span class="o">|</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">),[</span><span class="s1">&#39;DataItem&#39;</span><span class="p">,</span><span class="s1">&#39;Height&#39;</span><span class="p">,</span><span class="s1">&#39;Height_Inches&#39;</span><span class="p">]]</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height_Inches&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">())</span><span class="o">&amp;</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Height&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">notna</span><span class="p">()),[</span><span class="s2">&quot;DataItem&quot;</span><span class="p">,</span><span class="s2">&quot;Height&quot;</span><span class="p">,</span><span class="s2">&quot;Height_Inches&quot;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DataItem</th>
+      <th>Height</th>
+      <th>Height_Inches</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6197</th>
+      <td>6199</td>
+      <td>5'85."</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>11492</th>
+      <td>11494</td>
+      <td>illegible</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>15694</th>
+      <td>15696</td>
+      <td>9'.75"</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>As could be seen, wherever possible, the team went through the scanned documents for the erroneous entries and updated the conversions ourselves. For these erroneous data, MSA would be contacted to fix the Source of Record.</p>
+</section>
+<section id="age-feature">
+<h2>Age feature<a class="headerlink" href="#age-feature" title="Link to this heading">#</a></h2>
+<p>Age field was originally in the text type format, converted to number, and converted all the decimals which was entered as it is from the original document listed as months into a 12 month per year relative decimal value, for example, the original CoF noted the enslaved person as 18 months old, the dataset had this value as 0.18 under the age column which actually should be 1.5 years old.</p>
+<section id="below-is-a-key-function-that-converts-bad-decimal-values-transcrbed-into-a-good-decimal-fraction-of-a-year-for-example-0-18-was-transcribed-for-18-months-this-was-converted-to-1-5-years">
+<h3>Below is a key function that converts bad decimal values transcrbed into a good decimal fraction of a year. For example, 0.18 was transcribed for 18 months, this was converted to 1.5 years.<a class="headerlink" href="#below-is-a-key-function-that-converts-bad-decimal-values-transcrbed-into-a-good-decimal-fraction-of-a-year-for-example-0-18-was-transcribed-for-18-months-this-was-converted-to-1-5-years" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># code to pull the above </span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">from</span> <span class="nn">fractions</span> <span class="kn">import</span> <span class="n">Fraction</span>
+<span class="k">def</span> <span class="nf">format_fraction_age</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>  
+    <span class="n">fractional</span><span class="p">,</span> <span class="n">whole</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">modf</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="c1"># Some of the records have been transcribed as bad fractions, this will fix it as a good fraction of a year</span>
+    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">fractional</span><span class="o">*</span><span class="mi">100</span><span class="o">/</span><span class="mi">12</span><span class="p">)</span>   
+<span class="c1"># The &#39;apply&#39; function applies the function definted above to the data frame&#39;s each records&#39; Age field value. </span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;AgeFormatted&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">format_fraction_age</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="c1"># import shlex</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># code to find the converted Age records</span>
+<span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;Age&quot;</span><span class="p">]</span><span class="o">&lt;</span><span class="mi">1</span><span class="p">),[</span><span class="s1">&#39;DataItem&#39;</span><span class="p">,</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span><span class="s1">&#39;AgeFormatted&#39;</span><span class="p">]]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>DataItem</th>
+      <th>Age</th>
+      <th>AgeFormatted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>11876</th>
+      <td>11878</td>
+      <td>0.08</td>
+      <td>0.666667</td>
+    </tr>
+    <tr>
+      <th>13870</th>
+      <td>13872</td>
+      <td>0.18</td>
+      <td>1.500000</td>
+    </tr>
+    <tr>
+      <th>19625</th>
+      <td>19627</td>
+      <td>0.80</td>
+      <td>6.666667</td>
+    </tr>
+    <tr>
+      <th>22819</th>
+      <td>22822</td>
+      <td>0.09</td>
+      <td>0.750000</td>
+    </tr>
+    <tr>
+      <th>22849</th>
+      <td>22852</td>
+      <td>0.18</td>
+      <td>1.500000</td>
+    </tr>
+    <tr>
+      <th>22861</th>
+      <td>22864</td>
+      <td>0.03</td>
+      <td>0.250000</td>
+    </tr>
+    <tr>
+      <th>22890</th>
+      <td>22893</td>
+      <td>0.08</td>
+      <td>0.666667</td>
+    </tr>
+    <tr>
+      <th>22907</th>
+      <td>22910</td>
+      <td>0.03</td>
+      <td>0.250000</td>
+    </tr>
+    <tr>
+      <th>22912</th>
+      <td>22915</td>
+      <td>0.18</td>
+      <td>1.500000</td>
+    </tr>
+    <tr>
+      <th>22940</th>
+      <td>22943</td>
+      <td>0.06</td>
+      <td>0.500000</td>
+    </tr>
+    <tr>
+      <th>22969</th>
+      <td>22972</td>
+      <td>0.07</td>
+      <td>0.583333</td>
+    </tr>
+    <tr>
+      <th>22979</th>
+      <td>22982</td>
+      <td>0.06</td>
+      <td>0.500000</td>
+    </tr>
+    <tr>
+      <th>23038</th>
+      <td>23041</td>
+      <td>0.05</td>
+      <td>0.416667</td>
+    </tr>
+    <tr>
+      <th>23059</th>
+      <td>23062</td>
+      <td>0.18</td>
+      <td>1.500000</td>
+    </tr>
+    <tr>
+      <th>23118</th>
+      <td>23121</td>
+      <td>0.03</td>
+      <td>0.250000</td>
+    </tr>
+    <tr>
+      <th>23126</th>
+      <td>23129</td>
+      <td>0.07</td>
+      <td>0.583333</td>
+    </tr>
+    <tr>
+      <th>23154</th>
+      <td>23157</td>
+      <td>0.06</td>
+      <td>0.500000</td>
+    </tr>
+    <tr>
+      <th>23171</th>
+      <td>23174</td>
+      <td>0.04</td>
+      <td>0.333333</td>
+    </tr>
+    <tr>
+      <th>23269</th>
+      <td>23272</td>
+      <td>0.06</td>
+      <td>0.500000</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>For one case which was listed to be as 100 years old, upon checking the CoF original document, it’s unclear as the document shows something like eighty &amp; twenty years as highlighted below: This is also noted in the notes section as “Age given as eighty and twenty years. Could potentially be 28 years, not 100.”</p>
+<p><img alt="AgeIssue" src="../_images/CoF_Data_Preparation_Age_Incorrect.PNG" /></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># save the output file</span>
+<span class="c1"># save the output to the csv</span>
+<span class="n">dfo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="n">dfo</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/cases-umd/Legacy-of-Slavery/refs/heads/master/Datasets/LoS_Clean_Output_Mod2.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="notebooks">
+<h1>Notebooks<a class="headerlink" href="#notebooks" title="Link to this heading">#</a></h1>
+<p>The below module is organized into a sequential set of Python Notebooks that allows to interact with the Legacy of Slavery’s Certificates of Freedom collection by exploring, cleaning, preparing, visualizing and analysing it from historical context perspective.</p>
+<ol class="arabic simple" start="3">
+<li><p><a class="reference internal" href="#LoS_CoF_Module3.ipynb"><span class="xref myst">Certificates Of Freedom: Context Based Data Visualization</span></a> <strong>(If you get a 500 Internal Server Error, please refresh the browser to render this module again)</strong></p></li>
+</ol>
+<p><a class="reference internal" href="#LoS_CoF_Module3.ipynb"><span class="xref myst">Click here to go the Next Module</span></a> <strong>(If you get a 500 Internal Server Error, please refresh the browser to render this module again)</strong></p>
+<p><a class="reference internal" href="#LoS_CoF_Module1.ipynb"><span class="xref myst">Click here to go the Previous Module</span></a></p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./legacy-of-slavery"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="part1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Certificates Of Freedom — Data Analysis Part 1</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="part3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Certificates Of Freedom — Data Analysis Part 3</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Certificates Of Freedom — Data Analysis Part 2</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#height-feature">Height Feature</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#below-is-a-key-function-that-coverts-bad-height-format-and-feet-inches-into-a-standardized-inches-format-bad-ones-will-be-given-a-nan">Below is a key function that coverts bad height format and feet + inches into a standardized inches format. Bad ones will be given a ‘NaN’</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#age-feature">Age feature</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#below-is-a-key-function-that-converts-bad-decimal-values-transcrbed-into-a-good-decimal-fraction-of-a-year-for-example-0-18-was-transcribed-for-18-months-this-was-converted-to-1-5-years">Below is a key function that converts bad decimal values transcrbed into a good decimal fraction of a year. For example, 0.18 was transcribed for 18 months, this was converted to 1.5 years.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#notebooks">Notebooks</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Melanie Walsh & TALENT Network
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
