@@ -31,7 +31,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install -r mybookpath/cas_book/requirements.txt
+        pip install -r mybookpath/requirements.txt
 
     # (optional) Cache your executed notebooks between runs
     # if you have config:
